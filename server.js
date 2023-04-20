@@ -2,9 +2,9 @@ const http = require('http');
 const port = process.env.PORT || 8080;
 
 const requestListener = function (req, res) {
-res.writeHead(200);
-res.end('Testowanie jest super SUPER!');
+  res.writeHead(200);
+  res.end('Tomasz jest super!');
 }
 
-cons server = http.createServer(requestListener);
-serve.listen(port);
+const server = http.createServer(requestListener);
+server.listen(port);
